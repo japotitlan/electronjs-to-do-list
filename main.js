@@ -7,8 +7,8 @@ const createWindow = () => {
 
     // Main Window Object
     const mainWindow = new BrowserWindow({
-      width: 1200,
-      height: 900
+      width: 900,
+      height: 600
     })
   
     // Load HTML file
