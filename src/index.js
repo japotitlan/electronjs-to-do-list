@@ -6,21 +6,21 @@ addButton.addEventListener('click', () => {
 
     if (inputField.value == '') return;
 
-    let paragraph = document.createElement('p');
+    let listItem = document.createElement('li');
 
-    paragraph.classList.add('paragraph')
+    listItem.classList.add('list-group-item')
 
-    paragraph.innerText = inputField.value;
+    listItem.innerText = inputField.value;
 
-    container.appendChild(paragraph);
+    container.appendChild(listItem);
 
     inputField.value = '';
     
-    paragraph.addEventListener('click', () => {
-        paragraph.style.textDecoration = 'line-through';
+    listItem.addEventListener('click', () => {
+        listItem.style.textDecoration = 'line-through';
     });
 
-    paragraph.addEventListener('dblclick', () => {
-        container.removeChild(paragraph);
+    listItem.addEventListener('dblclick', () => {
+        container.removeChild(listItem);
     });
 });
