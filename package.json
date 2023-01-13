@@ -1,0 +1,15 @@
+{
+  "name": "electronjs-to-do-list",
+  "version": "1.0.0",
+  "description": "To-Do List App in ElectronJS",
+  "main": "main.js",
+  "scripts": {
+    "dev": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Japo",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^22.0.2"
+  }
+}
